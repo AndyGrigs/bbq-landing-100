@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className={classNames("app", {}, [])}>
-      <Suspense fallback="">
+     
         <div className={styles.container}>
           {/* Intro Section */}
           <div className={styles.intro}>
@@ -90,7 +90,7 @@ function App() {
             </p>
           </div>
         </div>
-      </Suspense>
+ 
     </div>
   );
 }
