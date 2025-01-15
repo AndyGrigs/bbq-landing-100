@@ -177,22 +177,22 @@ input {
 }
 
 // Overall Container
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-@media (min-width: 500px) {
-  .container {
-    flex-direction: row;
-    align-items: stretch;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    margin: 0 auto;
-    max-width: 1200px;
-    flex-direction: row;
-    align-items: stretch;
-  }
-}
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+// }
+// @media (min-width: 500px) {
+//   .container {
+//     flex-direction: row;
+//     align-items: stretch;
+//   }
+// }
+// @media (min-width: 1200px) {
+//   .container {
+//     margin: 0 auto;
+//     max-width: 1200px;
+//     flex-direction: row;
+//     align-items: stretch;
+//   }
+// }
