@@ -1,20 +1,7 @@
-@import "reset";
-@import "variables/global";
-@import "themes/normal";
-@import "themes/dark";
+// @import "reset";
+// @import "variables/global";
+// @import "themes/normal";
+// @import "themes/dark";
 
-.app {
-    font: var(--font-m);
-    background: var(--bg-color);
-    color: var(--primary-color);
-    min-height: 100vh;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900;&family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
 
-.content-page {
-    display: flex;
-}
-
-.page-wrapper {
-    flex-grow: 1;
-    padding: 20px;
-}

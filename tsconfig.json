@@ -42,5 +42,5 @@
     "./config/jest/setupTests.ts",
     "./src/**/*.ts",
     "./src/**/*.tsx"
-  ]
+, "src/app/App.tsx"  ]
 }

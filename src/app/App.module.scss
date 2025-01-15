@@ -1,0 +1,198 @@
+
+// Global resets/typography (applies at the body level)
+:global {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif, 'Source Sans Pro', sans-serif;
+    color: #404040;
+    text-align: center;
+  }
+}
+
+// Intro Section
+.intro {
+  background-image: url("https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80");
+  background-size: cover;
+  background-position: center;
+  background-color: #404040;
+  background-blend-mode: multiply;
+  padding: 0.25em 0.25em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // Center child content
+  & > * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+  }
+}
+
+.introInner {
+  color: #fff;
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 1em 0 0.25em;
+  }
+
+  p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    margin: 0;
+  }
+}
+
+// Main Content
+.mainContent {
+  padding: 2em 1em;
+
+  & > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+  }
+
+  h2 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+}
+
+// Utility classes
+.topText {
+  font-size: 0.625rem;
+  margin: 0;
+  padding-top: 2px;
+  color: #F18119;
+  font-weight: 900;
+  text-transform: uppercase;
+  order: -1;
+  border-top: 5px solid #F18119;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+
+.finePrint {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+strong {
+  font-weight: 900;
+}
+
+// Form Styles
+.emailCollector {
+  width: 80%;
+  max-width: 300px;
+  margin: 1em auto;
+}
+
+input,
+.btn {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+  margin-bottom: 0.75em;
+  padding: 0.25em;
+  border: 1px solid #404040;
+  transition: transform 250ms;
+
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: 0;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+.btnPrimary {
+  background-image: linear-gradient(to left, #FF713B, #FFA51D);
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+// Responsive
+@media (min-width: 500px) {
+  :global {
+    body {
+      font-size: 1.125rem;
+      display: flex;
+    }
+  }
+
+  .intro,
+  .mainContent {
+    width: 50%;
+    min-height: 100vh;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .introInner h1 {
+    font-size: 3.5rem;
+  }
+
+  .introInner p,
+  .mainContent h2 {
+    font-size: 1.75rem;
+  }
+}
+
+// Overall Container
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
